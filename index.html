@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>single page portfolio (JS)</title>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl.theme.default.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -71,7 +73,99 @@
       <section class="carousel">
         <div class="work"><h3>My Work</h3></div>
         <div class="images">
-          <img
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./assets/image-slide-1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="./assets/image-slide-2.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="./assets/image-slide-3.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="./assets/image-slide-4.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="./assets/image-slide-5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="arrow">
+          <button class="custom-owl-prev">
+            <svg
+              id="leftArrow"
+              class="pointer owl-next"
+              width="64"
+              height="64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Circular Background -->
+              <circle class="bg-svg" cx="32" cy="32" r="32" fill="#030303" />
+
+              <!-- Path for the centered arrow icon -->
+              <path
+                fill="#FFF"
+                d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"
+                transform="translate(23, 23)"
+              />
+            </svg>
+          </button>
+          <button class="custom-owl-next">
+            <svg
+              id="rightArrow"
+              class="pointer custom-owl-nav custom-owl-prev"
+              width="64"
+              height="64"
+            >
+              <circle
+                class="bg-svg custom-owl-nav custom-owl-next"
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#030303"
+              />
+              <path
+                d="M6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"
+                fill="#fff"
+                transform="translate(25, 25)"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="consultation">
+        <div class="text">
+          <h2>Book a call with me</h2>
+          <p>
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <div class="btn">
+          <button class="consultation-btn last-btn pointer bg-yellow">
+            Free Consultation
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#030303" d="M0 0h64v64H0z" />
+          <circle stroke="#FFF7F0" stroke-width="4" cx="25 " cy="25" r="14" />
+        </g>
+      </svg>
+      <button class="pointer bg-purple">Free Consultation</button>
+    </footer>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- <img
             id="imageOne"
             src="./assets/image-slide-1.jpg"
             class="image image-one"
@@ -100,62 +194,4 @@
             src="./assets/image-slide-5.jpg"
             class="image image-five"
             alt=""
-          />
-        </div>
-        <div class="arrow">
-          <svg
-            id="leftArrow"
-            class="pointer"
-            width="64"
-            height="64"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <!-- Circular Background -->
-            <circle class="bg-svg" cx="32" cy="32" r="32" fill="#030303" />
-
-            <!-- Path for the centered arrow icon -->
-            <path
-              fill="#FFF"
-              d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"
-              transform="translate(23, 23)"
-            />
-          </svg>
-
-          <svg id="rightArrow" class="pointer" width="64" height="64">
-            <circle class="bg-svg" cx="32" cy="32" r="30" fill="#030303" />
-            <path
-              d="M6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"
-              fill="#fff"
-              transform="translate(25, 25)"
-            />
-          </svg>
-        </div>
-      </section>
-      <section class="consultation">
-        <div class="text">
-          <h2>Book a call with me</h2>
-          <p>
-            I’d love to have a chat to see how I can help you. The best first
-            step is for us to discuss your project during a free consultation.
-            Then we can move forward from there.
-          </p>
-        </div>
-        <div class="btn">
-          <button class="consultation-btn last-btn pointer bg-yellow">
-            Free Consultation
-          </button>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fill-rule="evenodd">
-          <path fill="#030303" d="M0 0h64v64H0z" />
-          <circle stroke="#FFF7F0" stroke-width="4" cx="25 " cy="25" r="14" />
-        </g>
-      </svg>
-      <button class="pointer bg-purple">Free Consultation</button>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
-</html>
+          /> -->

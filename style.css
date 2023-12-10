@@ -112,6 +112,11 @@ footer button {
   text-align: center;
   padding: 0 16px;
 }
+.custom-owl-prev,
+.custom-owl-next {
+  border: none;
+  background-color: white;
+}
 
 .description h2 {
   color: #030303;
