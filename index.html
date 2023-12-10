@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>single page portfolio (JS)</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#030303" d="M0 0h64v64H0z" />
+          <circle stroke="#FFF7F0" stroke-width="4" cx="25 " cy="25" r="14" />
+        </g>
+      </svg>
+      <button class="pointer bg-purple">Free Consultation</button>
+    </header>
+    <main>
+      <article class="intro">
+        <h1>Design solutions made easy</h1>
+        <p>
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+      </article>
+      <section class="services">
+        <div class="graphic-desig box">
+          <img src="./assets/pattern-graphic-design.svg" alt="" />
+          <h3>Graphic Design</h3>
+        </div>
+        <div class="two-service box">
+          <div class="ui-ux box">
+            <img src="./assets/pattern-ui-ux.svg" alt="" />
+            <h3>UI/UX</h3>
+          </div>
+          <div class="apps box">
+            <img src="./assets/pattern-apps.svg" alt="" />
+            <h3>Apps</h3>
+          </div>
+          <div class="illustrations box">
+            <img src="./assets/pattern-illustrations.svg" alt="" />
+            <h3>Illustrations</h3>
+          </div>
+        </div>
+
+        <div class="photography box">
+          <img src="./assets/pattern-photography.svg" alt="" />
+          <h3>Photography</h3>
+        </div>
+        <div class="motion-graphics box">
+          <img src="./assets/pattern-motion-graphics.svg" alt="" />
+          <h3>Motion Graphics</h3>
+        </div>
+      </section>
+      <section class="description">
+        <img src="./assets/image-amy.webp" alt="" />
+        <div class="descr-text">
+          <h2>I’m Amy, and I’d love to work on your next project</h2>
+          <p>
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <button class="consultation-btn pointer bg-yellow">
+            Free Consultation
+          </button>
+        </div>
+      </section>
+      <section class="carousel">
+        <div class="work"><h3>My Work</h3></div>
+        <div class="images">
+          <img
+            id="imageOne"
+            src="./assets/image-slide-1.jpg"
+            class="image image-one"
+            alt=""
+          />
+          <img
+            id="imageTwo"
+            src="./assets/image-slide-2.jpg"
+            class="image image-two"
+            alt=""
+          />
+          <img
+            id="imageThree"
+            src="./assets/image-slide-3.jpg"
+            class="image image-three"
+            alt=""
+          />
+          <img
+            id="imageFour"
+            src="./assets/image-slide-4.jpg"
+            class="image image-four"
+            alt=""
+          />
+          <img
+            id="imageFive"
+            src="./assets/image-slide-5.jpg"
+            class="image image-five"
+            alt=""
+          />
+        </div>
+        <div class="arrow">
+          <svg
+            id="leftArrow"
+            class="pointer"
+            width="64"
+            height="64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Circular Background -->
+            <circle class="bg-svg" cx="32" cy="32" r="32" fill="#030303" />
+
+            <!-- Path for the centered arrow icon -->
+            <path
+              fill="#FFF"
+              d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"
+              transform="translate(23, 23)"
+            />
+          </svg>
+
+          <svg id="rightArrow" class="pointer" width="64" height="64">
+            <circle class="bg-svg" cx="32" cy="32" r="30" fill="#030303" />
+            <path
+              d="M6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"
+              fill="#fff"
+              transform="translate(25, 25)"
+            />
+          </svg>
+        </div>
+      </section>
+      <section class="consultation">
+        <div class="text">
+          <h2>Book a call with me</h2>
+          <p>
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <div class="btn">
+          <button class="consultation-btn last-btn pointer bg-yellow">
+            Free Consultation
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#030303" d="M0 0h64v64H0z" />
+          <circle stroke="#FFF7F0" stroke-width="4" cx="25 " cy="25" r="14" />
+        </g>
+      </svg>
+      <button class="pointer bg-purple">Free Consultation</button>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

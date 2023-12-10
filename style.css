@@ -1,0 +1,336 @@
+@font-face {
+  font-family: Plus-Jakarta-500;
+  src: url(./assets/PlusJakartaSans-Medium.ttf);
+}
+@font-face {
+  font-family: Plus-Jakarta-700;
+  src: url(./assets/PlusJakartaSans-Bold.ttf);
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+header button,
+footer button {
+  font-family: Plus-Jakarta-700;
+  color: #fff7f0;
+  background-color: #030303;
+  border-radius: 30px;
+  border: none;
+  padding: 0 25px;
+}
+
+.intro h1 {
+  font-family: Plus-Jakarta-700;
+  font-size: 36px;
+  color: #030303;
+  padding-top: 32px;
+}
+
+.intro {
+  text-align: center;
+}
+.intro p {
+  font-family: Plus-Jakarta-500;
+  color: #7a746e;
+  line-height: 26px;
+  padding: 16px 0 32px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  gap: 24px;
+}
+.services h3 {
+  font-family: Plus-Jakarta-700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.graphic-desig {
+  background-color: #755cde;
+}
+.box {
+  border-radius: 10px;
+}
+.services img {
+  float: right;
+  padding: 24px;
+}
+.graphic-desig h3 {
+  padding: 300px 0 24px 24px;
+}
+.two-service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  gap: 25px;
+}
+.ui-ux {
+  background-color: #f6a560;
+}
+.apps {
+  background-color: #f39e9e;
+}
+.illustrations {
+  background-color: #eb7565;
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.ui-ux h3,
+.apps h3,
+.motion-graphics h3,
+.photography h3 {
+  padding: 128px 0 24px 24px;
+}
+
+.illustrations h3 {
+  padding: 104px 0 24px 24px;
+}
+
+.photography {
+  background-color: #61c4b7;
+}
+
+.motion-graphics {
+  background-color: #552049;
+  margin-bottom: 100px;
+}
+.description img {
+  max-width: 100%;
+  padding: 0 21px;
+}
+
+.description {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.description h2 {
+  color: #030303;
+  font-family: Plus-Jakarta-700;
+  font-size: 26px;
+  line-height: 32px;
+}
+.description p {
+  color: #7a746e;
+  font-family: Plus-Jakarta-500;
+  line-height: 26px;
+}
+.consultation-btn {
+  font-family: Plus-Jakarta-700;
+  color: #fff7f0;
+  background-color: #eb7565;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 15px;
+  margin: 24px 0 48px;
+}
+.work {
+  margin-top: 52px;
+  text-align: center;
+}
+.work h3 {
+  font-family: Plus-Jakarta-700;
+  color: #030303;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+.image-one,
+.image-five {
+  display: none;
+}
+.image {
+  height: 25vh;
+}
+.images {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.image-two {
+  position: absolute;
+  transform: translate(-105%, 0);
+}
+.image-four {
+  position: absolute;
+  transform: translate(5%, 0);
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 80px;
+}
+
+.consultation {
+  background-color: #030303;
+  margin: 15px;
+  color: #fff7f0;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.consultation h2 {
+  font-family: Plus-Jakarta-700;
+  font-size: 26px;
+  padding: 49px 0 24px;
+  margin: 0;
+}
+.consultation p {
+  font-family: Plus-Jakarta-500;
+  line-height: 26px;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.bg-purple:hover {
+  background-color: #755cde;
+}
+.bg-svg:hover {
+  fill: #755cde;
+}
+.bg-yellow:hover {
+  background-color: #f6a560;
+}
+
+@media (min-width: 500px) {
+  .image {
+    height: 35vh;
+  }
+}
+@media (min-width: 768px) {
+  header,
+  footer {
+    margin: 34px 39px;
+  }
+  .intro h1 {
+    font-size: 44px;
+  }
+  .intro p {
+    width: 600px;
+    font-size: 18px;
+    padding: 27px 0 54px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 182px;
+  }
+
+  .motion-graphics {
+    margin-bottom: 0;
+  }
+  .description {
+    display: flex;
+    margin-top: 120px;
+    margin-left: -65px;
+    gap: 40px;
+  }
+  .description img {
+    max-width: 50%;
+    padding-left: 0;
+  }
+  .descr-text {
+    max-width: 50%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .descr-text h2 {
+    font-size: 32px;
+    width: 340px;
+    line-height: 40px;
+  }
+
+  .image {
+    height: 50vh;
+  }
+  .consultation p {
+    width: 540px;
+  }
+  .consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .consultation h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  header,
+  footer {
+    margin: 34px 165px 65px;
+  }
+  .intro h1 {
+    font-size: 56px;
+    padding-top: 0;
+  }
+  .intro p {
+    width: 730px;
+  }
+
+  .services {
+    margin: 0 165px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 182px);
+  }
+
+  .graphic-desig {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .motion-graphics {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .two-service {
+    grid-template-rows: repeat(2, 182px);
+  }
+  .description {
+    margin: 165px;
+  }
+  .descr-text h2 {
+    padding-top: 70px;
+    font-size: 40px;
+    width: 540px;
+    line-height: 50px;
+  }
+  .descr-text button {
+    padding: 15px 25px;
+  }
+  .image {
+    height: 360px;
+  }
+  .consultation p {
+    width: 540px;
+    padding-bottom: 80px;
+  }
+  .consultation {
+    text-align: start;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 165px;
+  }
+  .consultation h2 {
+    font-size: 32px;
+  }
+  .last-btn {
+    margin: 0;
+  }
+}
